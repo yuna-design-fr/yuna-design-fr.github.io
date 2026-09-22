@@ -1,0 +1,73 @@
+---
+layout: default
+---
+    <main class="container my-4 pt-5">
+      <div class="row g-4">
+      {% for project in site.data.works %}
+      {% assign image_sources = "" | split: "" %}
+      {% for img in project.images %}
+        {% assign image_sources = image_sources | push: img.src %}
+      {% endfor %}
+        <div class="col-12 col-md-4 my-3">
+          <div class="card border-0 work-card" data-images='{{ image_sources | jsonify }}' data-index="0">
+            <div class="ratio ratio-1x1 clickable-card"{% if project.images.size > 1 %} style="cursor: pointer;" title="Cliquez pour voir l'image suivante"{% endif %}>
+              <img src="/assets/img/{{ project.images[0].src }}" class="card-img-top p-2 p-md-3 p-lg-5 object-fit-contain work-image" alt="">
+            </div>
+            <div class="card-body text-center p-md-0">
+              <h5 class="card-title">{{ project.title }}</h5>
+              {% if project.client %}<h6 class="card-title">{{ project.client }}</h6>{% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    <section class="pt-3 mx-2 mx-md-3 mx-lg-5 my-4" id="contact">
+      <h2 class="text-center mb-4 fs-4 contact-title">Contact</h2>
+        <form action="https://submit-form.com/xwOcTs22L" method="POST">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 d-flex flex-column gap-3">
+              <div>
+                <label for="name" class="form-label text-muted">Nom</label>
+                <input type="text" class="form-control rounded-0" id="name" name="name" required>
+              </div>
+              <div>
+                <label for="email" class="form-label text-muted">Email</label>
+                  <input type="email" class="form-control rounded-0" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+              <div class="flex-grow-1 mb-3">
+                <label for="message" class="form-label text-muted">Message</label>
+                <textarea class="form-control rounded-0 h-100" id="message" name="message" rows="5" required style="min-height: 120px;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <button type="submit" class="btn btn-dark rounded-0 px-5">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="text-center py-4">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Tous droits réservés.</p>
+    </footer>
+    <script>
+      document.addEventListener('click', function(e) {
+        const card = e.target.closest('.work-card');
+        if (!card) return;
+        if (e.target.closest('.clickable-card')) {
+          const images = JSON.parse(card.dataset.images);
+          if (images.length <= 1) return; // Skip if there's only 1 image
+          let currentIndex = parseInt(card.dataset.index, 10);
+          currentIndex = (currentIndex + 1) % images.length;
+          card.dataset.index = currentIndex;
+          const imgElement = card.querySelector('.work-image');
+          imgElement.src = '/assets/img/' + images[currentIndex];
+          const counter = card.querySelector('.image-counter');
+          if (counter) {
+            counter.textContent = `${currentIndex + 1} / ${images.length}`;
+          }
+        }
+      });
+    </script>

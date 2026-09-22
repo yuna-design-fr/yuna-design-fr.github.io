@@ -1,0 +1,132 @@
+-
+  title: Identité graphique
+  client: Bex Music Festival
+  images:
+    - src: bex-music-festival.png
+      desc: Logo
+    - src: bex-music-festival-affiche.jpg
+      desc: Affiche
+    - src: bex-music-festival-siteweb.jpg
+      desc: Site web
+-
+  title: Identité graphique
+  client: Altamira Lille Guitar Festival
+  images:
+    - src: altamira-lille-guitar-festival.jpg
+      desc: Affiche
+    - src: altamira-lille-guitar-festival-badge.jpg
+      desc: Badge
+-
+  title: Identité graphique
+  client: Institut Frédéric Chopin en Suisse
+  images:
+    - src: jeune-chopin-2027-sns.jpg
+      desc: Image pour réseaux sociaux
+    - src: jeune-chopin-2027-affiche.jpg
+      desc: Affiche
+-
+  title: Identité graphique
+  client: Association des parents d'élèves du conservatoire
+  images:
+    - src: apeacl.png
+      desc: Logo
+    - src: apeacl-rollup.jpg
+      desc: Roll-up
+-
+  title: Identité graphique
+  client: Institut Frédéric Chopin en Suisse
+  images:
+    - src: jeune-chopin-2025.png
+      desc: Illustration
+    - src: jeune-chopin-2025-affiche.jpg
+      desc: Affiche
+    - src: jeune-chopin-2025-affiche2.jpg
+      desc: Affiche
+    - src: jeune-chopin-2025-sns.jpg
+      desc: Image pour réseaux sociaux
+-
+  title: Identité graphique
+  client: Atelier de lutherie
+  images:
+    - src: luthier-matsuo.png
+      desc: Logo
+    - src: les-cordes.png
+      desc: Logo
+-
+  title: Identité graphique
+  client: OSS Vision
+  images:
+    - src: oss-vision.png
+      desc: Logo
+    - src: oss-vision-affiche.jpg
+      desc: Affiche
+-
+  title: Identité graphique
+  client: Ruby Association
+  images:
+    - src: ruby25.png
+      desc: Logo
+    - src: ruby25-sns.jpg
+      desc: Image pour réseaux sociaux
+    - src: ruby30-t-shirt.jpg
+      desc: T-shirt
+    - src: ruby30-siteweb.jpg
+      desc: Site web
+-
+  title: Identité graphique
+  client: Ruby Association
+  images:
+    - src: ruby-association.png
+      desc: Logo
+    - src: ruby-association-certificat.jpg
+      desc: Certificat
+-
+  title: Identité graphique
+  client: Ferme
+  images:
+    - src: ushiro-logo.jpg
+      desc: Logo
+    - src: ushiro-boite.jpg
+      desc: Boîte
+    - src: ushiro-autocollant.jpg
+      desc: Autocollant
+-
+  title: Identité graphique
+  client: Chapellerie
+  images:
+    - src: dandy-rose.jpg
+      desc: Logo
+    - src: dandy-rose-1.jpg
+      desc: Page web
+    - src: dandy-rose-2.jpg
+      desc: Page web
+-
+  title: Design de couverture
+  client: Kurosio Publishers
+  images:
+    - src: kurosio.jpg
+      desc: Design de couverture
+    - src: kurosio2.jpg
+      desc: Design de couverture
+-
+  title: Design de couverture
+  client: Société franco-japonais de philosophie
+  images:
+    - src: revue-de-philosophie-francaise.png
+      desc: Design de couverture
+-
+  title: Illustration
+  images:
+    - src: illustration-euro.jpg
+    - src: illustration-vaccin.jpg
+-
+  title: Carte de Noël
+  images:
+    - src: carte-noel-2022.jpg
+      desc: Carte de Noël 2022
+    - src: carte-noel-2023.jpg
+      desc: Carte de Noël 2023
+    - src: carte-noel-2024.jpg
+      desc: Carte de Noël 2024
+    - src: carte-noel-2025.jpg
+      desc: Carte de Noël 2025

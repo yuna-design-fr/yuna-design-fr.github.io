@@ -1,0 +1,18 @@
+:root {
+  --bs-primary: #212529;
+  --bs-primary-rgb: 33, 37, 41;
+  --bs-body-color: #333333;
+  --bs-body-bg: #f8f9fa;
+  --bs-light: #f8f9fa;
+  --bs-border-color: #dee2e6;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
